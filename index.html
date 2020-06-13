@@ -9800,13 +9800,13 @@ Error message and password prompt
 <div created="20200613151146091" modified="20200613155540088" title="$:/state/toc/Contents-OvenMode-1843068618">
 <pre>close</pre>
 </div>
-<div created="20200510165847003" modified="20200613155540897" title="$:/state/toc/Contents-Recipes-1843068618">
+<div created="20200510165847003" modified="20200613160806080" title="$:/state/toc/Contents-Recipes-1843068618">
 <pre>close</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200613135901993" list="OvenMode" modified="20200613155800037" title="$:/StoryList">
+<div created="20200613135901993" list="" modified="20200613160659242" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10047,11 +10047,21 @@ link: {{##name}}</pre>
 <div bag="default" created="20200510160848405" modified="20200510161101260" revision="0" tags="" title="New Tiddler" type="text/vnd.tiddlywiki">
 <pre>abc</pre>
 </div>
-<div bag="default" caption="Режимы работы духовки" created="20200510124854792" list="Light TrueFanCooking PizzaSetting ConventionalCooking BottomHeat Defrost Grilling FastGrilling TurboGrilling" modified="20200613155534660" revision="0" tags="Contents" title="OvenMode">
+<div bag="default" caption="Режимы работы духовки" created="20200510124854792" list="Light TrueFanCooking PizzaSetting ConventionalCooking BottomHeat Defrost Grilling FastGrilling TurboGrilling" modified="20200613160617089" revision="0" tags="Contents" title="OvenMode">
 <pre>&lt;table&gt;
-    &lt;tr&gt;&lt;th&gt;Иконка&lt;/th&gt;&lt;th&gt;Режим&lt;/th&gt;&lt;th&gt;Mode&lt;/th&gt;&lt;th&gt;Применение&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Иконка&lt;/th&gt;
+        &lt;th&gt;Режим&lt;/th&gt;
+        &lt;th&gt;Mode&lt;/th&gt;
+        &lt;th&gt;Применение&lt;/th&gt;
+    &lt;/tr&gt;
     &lt;$list filter=&quot;[tag[OvenMode]]&quot;&gt;
-        &lt;tr&gt;&lt;td&gt;{{##image}}&lt;/td&gt;&lt;td&gt;{{##link}}&lt;/td&gt;&lt;td&gt;{{!!caption}}&lt;/td&gt;&lt;td&gt;{{##usage}}&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;{{##image}}&lt;/td&gt;
+            &lt;td&gt;{{##link}}&lt;/td&gt;
+            &lt;td&gt;&lt;$link&gt;{{!!caption}}&lt;/$link&gt;&lt;/td&gt;
+            &lt;td&gt;{{##usage}}&lt;/td&gt;
+        &lt;/tr&gt;
     &lt;/$list&gt;
 &lt;/table&gt;
 
@@ -10142,7 +10152,7 @@ link: [ext[Турбо гриль | pdfx://refs/priv/home/oven/manual-ru.pdf::20]
 крышку и перемешать.
 </pre>
 </div>
-<div bag="default" created="20200510131619692" modified="20200611083837798" revision="0" tags="Recipes" title="Куриные крылышки/ножки в духовке">
+<div bag="default" created="20200510131619692" modified="20200613160754273" revision="0" tags="Recipes" title="Куриные крылышки/ножки в духовке">
 <pre>Крылышки/ножки обмазать смесью соли и карри/черного перца.
 
 [img width=300 [/recipes/images/krylyshki-v-duhovke-1.jpg]]
@@ -10158,7 +10168,7 @@ link: [ext[Турбо гриль | pdfx://refs/priv/home/oven/manual-ru.pdf::20]
 Противень поставить в разогретую духовку.  Готовить крылышки 25 мин, ножки 35 мин.
 
 * Температура: 180{{C}} 
-* Режим: {{TurboGrilling.png}}
+* Режим: {{TurboGrilling##image}}
 * Уровень: 2
 
 Выключить духовку и оставить на 10-15 мин.
@@ -10202,7 +10212,7 @@ link: [ext[Турбо гриль | pdfx://refs/priv/home/oven/manual-ru.pdf::20]
 при 200{{C}}.
 </pre>
 </div>
-<div bag="default" created="20200604105501742" modified="20200613150215206" revision="0" tags="Recipes" title="Свиные ребрышки в духовке">
+<div bag="default" created="20200604105501742" modified="20200613160737980" revision="0" tags="Recipes" title="Свиные ребрышки в духовке">
 <pre>Полоску ребрышек разрезать, обмазать черным перцем и солью (1 ч.ложка).
 
 Обмазать майонезом и мариновать 30+ мин.
@@ -10224,10 +10234,10 @@ link: [ext[Турбо гриль | pdfx://refs/priv/home/oven/manual-ru.pdf::20]
 Через 15 мин перевернуть и запекать еще 15 мин.
 </pre>
 </div>
-<div bag="default" created="20200510125800810" modified="20200510130557521" revision="0" tags="Recipes" title="Стейки форели/семги в духовке">
+<div bag="default" created="20200510125800810" modified="20200613160732143" revision="0" tags="Recipes" title="Стейки форели/семги в духовке">
 <pre>Стейки форели или семги обмазать солью и приправами. Противень
 смазать подсолнечным маслом. Запекать 30 мин при 180{{C}} на режиме
-{{TurboGrilling.png}}
+{{TurboGrilling##image}}
 </pre>
 </div>
 <div bag="default" created="20200510131015214" modified="20200510131044216" revision="0" tags="Recipes" title="Стейки форели/семги в мультиварке на пару">
@@ -10237,14 +10247,14 @@ link: [ext[Турбо гриль | pdfx://refs/priv/home/oven/manual-ru.pdf::20]
 готовить 25 мин, размороженные 20 мин.
 </pre>
 </div>
-<div bag="default" created="20200510131937769" modified="20200510132037388" revision="0" tags="Recipes" title="Сырники в духовке">
+<div bag="default" created="20200510131937769" modified="20200613160717556" revision="0" tags="Recipes" title="Сырники в духовке">
 <pre>400 г рассыпчатого творога, 4 столовой ложки манки,
 3 столовой ложки сахара, одно яйцо, мука. Все перемешать,
 скатать шарики, придать форму, посыпать мукой.
 Выложить на противень, запекать 25 мин при 180{{C}}.
 </pre>
 </div>
-<div bag="default" created="20200510132043226" modified="20200510132122594" revision="0" tags="Recipes" title="Торт &quot;Домик&quot;">
+<div bag="default" created="20200510132043226" modified="20200613160713692" revision="0" tags="Recipes" title="Торт &quot;Домик&quot;">
 <pre>4x3 печенек, 4 детских творожка выложить в домик.
 4 чайных ложки с горкой какао, 2 чайных ложки сахара,
 50 г масла, размешать в воде/молоке/сливках и обмазать
@@ -10258,12 +10268,12 @@ link: [ext[Турбо гриль | pdfx://refs/priv/home/oven/manual-ru.pdf::20]
 Подавать разложенным на тарелке, полить оливковым маслом и посыпать паприкой.
 </pre>
 </div>
-<div bag="default" created="20200510132238231" modified="20200510132308923" revision="0" tags="Recipes" title="Чай в зеленом термосе">
+<div bag="default" created="20200510132238231" modified="20200613160706965" revision="0" tags="Recipes" title="Чай в зеленом термосе">
 <pre>2 чайных ложки без горки черного чая, маленькая долька лимона,
 8 кубиков сахара (4 чайных ложки без горки).
 </pre>
 </div>
-<div bag="default" created="20200510132315368" modified="20200510132343917" revision="0" tags="Recipes" title="Шашлык из курицы в духовке">
+<div bag="default" created="20200510132315368" modified="20200613160702672" revision="0" tags="Recipes" title="Шашлык из курицы в духовке">
 <pre>Филе или грудку разрезать на небольшие кусочки.
 2 луковицы нарезать дольками. Кусочки и лук
 залить кетчупом, солью, перцем и мариновать 2+ часа.
